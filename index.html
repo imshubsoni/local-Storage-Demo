@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Local Storage</title>
+
+    <!-- External CSS File -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div id="main">
+      <div id="container">
+        <div id="image-div">
+          <img src="./assets/images/kohli.jpg" alt="" id="side-img" />
+          <div id="text-content">
+            <h4>Register Now!</h4>
+            <p>Don't miss this opportunity!</p>
+          </div>
+        </div>
+        <div id="form-div">
+          <form action="" id="form">
+            <div class="form-row">
+              <div class="form-group">
+                <div class="form-input">
+                  <label for="fullName" class="form-required">Full Name</label>
+                  <input type="text" name="fullName" id="full-name" required />
+                </div>
+                <div class="form-input">
+                  <label for="emailId" class="form-required">Email Id</label>
+                  <input type="email" name="emailId" id="email-id" required />
+                </div>
+                <div class="form-input">
+                  <label for="confirmEmail" class="form-required"
+                    >Re-Enter Email Id</label
+                  >
+                  <input
+                    type="email"
+                    name="confirmEmail"
+                    id="confirm-email"
+                    required
+                  />
+                </div>
+                <div class="form-input">
+                  <label for="instaId">Instagram Id</label>
+                  <input type="text" name="instaId" id="insta-id" />
+                </div>
+                <div class="form-input">
+                  <label for="phoneNumber" class="form-required"
+                    >Contact Number</label
+                  >
+                  <input
+                    type="number"
+                    name="phoneNumber"
+                    id="phone-number"
+                    required
+                  />
+                </div>
+                <div class="form-input">
+                  <label for="gender" class="form-required">Gender</label>
+                  <select name="gender" id="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="trans">Prefer not to say</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="form-input">
+                  <label for="whatsappNumber">WhatsApp Number</label>
+                  <input
+                    type="number"
+                    name="whatsappNumber"
+                    id="whatsapp-number"
+                  />
+                </div>
+                <div class="form-input">
+                  <label for="password" class="form-required">Password</label>
+                  <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    required
+                  />
+                </div>
+                <div class="form-input">
+                  <label for="confirmPassword" class="form-required"
+                    >Confirm Password</label
+                  >
+                  <input
+                    type="password"
+                    name="confirmPassword"
+                    id="confirm-password"
+                    required
+                  />
+                </div>
+                <div class="form-input">
+                  <label for="textArea"
+                    >We would love to hear something from you!</label
+                  >
+                  <textarea
+                    name="textArea"
+                    id=""
+                    cols="30"
+                    rows="5"
+                    id="text-areas"
+                  ></textarea>
+                </div>
+              </div>
+            </div>
+
+            <div id="buttons">
+              <input type="submit" id="submit-button" value="Submit" />
+              <input type="reset" id="reset-button" value="reset" />
+            </div>
+          </form>
+
+          <div id="contents"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./assets/js/main.js"></script>
+</html>
